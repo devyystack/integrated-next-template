@@ -1,0 +1,40 @@
+@import "./responsive.scss";
+
+$black: #000;
+$red: #ed2123;
+
+
+$screen-sm-min: 527px;
+$screen-md-min: 767px;
+$screen-lg-min: 922px;
+$screen-xl-min: 1200px;
+$screen-xxl-min: 1400px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-sm-max: ($screen-md-min - 1);
+$screen-md-max: ($screen-lg-min - 1);
+$screen-lg-max: ($screen-xl-min - 1);
+$screen-xl-max: ($screen-xxl-min - 1);
+
+$z-index-0: -100; /* Video */
+$z-index-1: 100; /* Backgrounds */
+$z-index-2: 200; /* Content, buttons */
+$z-index-3: 300; /* Captions */
+$z-index-4: 400; /* Meta */
+$z-index-5: 500; /* Avatars, logos */
+$z-index-6: 600; /* Sidebars, overlays */
+$z-index-7: 700; /* Modals, transitions */
+$z-index-8: 800; /* Navs */
+$z-index-9: 900; /* Topbars, tooltips */
+$z-index-10: 1000; /* Dev */
+
+$ease-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+.working {
+  background: rgb(159, 159, 159);
+  background: linear-gradient(
+    180deg,
+    rgba(159, 159, 159, 1) 0%,
+    rgba(113, 113, 113, 1) 100%
+  ) !important;
+}
+

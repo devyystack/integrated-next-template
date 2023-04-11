@@ -1,0 +1,12 @@
+@import '@/styles/variables.scss';
+
+.videoPlayer {
+  z-index: 1;
+}
+
+.muteToggle {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: $z-index-8;
+}

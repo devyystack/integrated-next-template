@@ -1,0 +1,12 @@
+.layout {
+    position: relative;
+    max-width: 1450px;
+    margin: 0 auto;
+    > h2 {
+        margin: 40px 0 0 0;
+        font-size: 16px;
+        > span {
+            float: right;
+        }
+    }
+}

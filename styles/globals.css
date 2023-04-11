@@ -1,0 +1,154 @@
+@tailwind base;
+
+
+.triangle {
+
+}
+
+.triangle::before {
+  content: '';
+  height: 100%;
+  position: absolute;
+  top: 0; 
+  left: 0em;
+  border: 1em solid transparent;
+  border-left-color: #ffffff;
+}
+
+
+html, body {
+  font-family: 'AvenirLTPro-Medium', sans-serif;
+}
+
+html {
+  overflow: scroll;
+}
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3eee99");
+  
+@font-face {
+  font-family: "AvenirLTPro-Heavy";
+  src: url('/fonts/AvenirLTProHeavy/font.woff2') format('woff2'), url('/fonts/AvenirLTProHeavy/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirLTPro-Light";
+  src: url('/fonts/AvenirLTProLight/font.woff2') format('woff2'), url('/fonts/AvenirLTProLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirLTPro-Medium";
+  src: url('/fonts/AvenirLTProMedium/font.woff2') format('woff2'), url('/fonts/AvenirLTProMedium/font.woff') format('woff');
+}
+
+
+
+.slick-list {
+  /* overflow: hidden; */
+}
+
+.slick-slider {
+  padding-bottom: 0px;
+  position: relative;
+  z-index: 50;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+
+.slick-large .slick-prev {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 36px;
+  display: block !important; 
+}
+
+.slick-large .slick-next {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  width: 36px;
+  display: block !important; 
+}
+
+.slick-large .zoom {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 50;
+}
+
+.slick-large .loaded {
+  display: block;
+}
+
+.slick-large .slick-next::before {
+  display: none;
+}
+
+
+.slick-large .slick-prev::before {
+  display: none;
+}
+
+
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+.slick-dots li {
+
+  width: 10px !important;
+  height: 10px !important;
+  border: 1px solid black;
+  border-radius: 50%;
+
+}
+
+.slick-dots li.slick-active {
+  background-color: black !important;
+}
+
+.slick-dots li button {
+  width: auto;
+  height: auto;
+}
+
+.slick-dots li button::before {
+  content: '' !important;
+}
+
+.slick-vertical {
+  height: 95% !important;
+}
+
+figure.loading {
+  height: 105vh !important;
+  position: relative;
+}
+
+input {
+  border-radius: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0 0px;
+  max-width: 1620px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}

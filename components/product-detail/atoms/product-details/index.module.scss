@@ -1,0 +1,17 @@
+@import '@/styles/variables.scss';
+
+.productDetails {
+  position: relative;
+  width: 34%;
+  margin: 0 0 0 auto;
+  @include respond-to('medium-lg') {
+    width: 30%;
+  }
+  @include respond-to('medium') {
+    width: 42%;
+  }
+  @include respond-to('small') {
+    width: 100%;
+    padding: 0 0px;
+  }
+}

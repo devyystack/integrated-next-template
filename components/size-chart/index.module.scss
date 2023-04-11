@@ -1,0 +1,78 @@
+@import '@/styles/variables.scss';
+
+.sizeChart {
+  position: relative;
+  padding: 55px 40px 55px 40px;
+  background-color: white;
+  width: 'calc( 100% - 20px )';
+  margin: 10px auto 10px auto;
+  // height: "100%";
+
+  @include respond-to('small') {
+    margin: 10px;
+    padding: 55px 20px 55px 20px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 14px;
+  }
+  &Close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 23px;
+
+    @include respond-to('small') {
+      top: 20px;
+      right: 20px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  &Table {
+    border: 1px solid black;
+    width: 100%;
+    margin: 30px 0 0 0;
+    font-size: 12px;
+    &BgBlack {
+      background-color: black;
+      color: white;
+    }
+    &GrayOne {
+      background-color: #d0d0d0;
+    }
+    &GrayTwo {
+      background-color: #e3e3e3;
+    }
+    &GrayThree {
+      background-color: #f0f0f0;
+    }
+    th {
+      font-family: 'AvenirLTPro-Medium';
+      font-size: 13px;
+    }
+    th,
+    td {
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px 0;
+    }
+    td {
+      font-family: 'AvenirLTPro-Light';
+    }
+  }
+  &Label {
+    position: relative;
+  }
+  legend {
+    h3 {
+      font-family: 'AvenirLTPro-Medium';
+      font-size: 13px;
+      margin: 0 0 10px 0;
+    }
+    font-family: 'AvenirLTPro-Light';
+    margin: 30px 0 0 0;
+    font-size: 12px;
+  }
+}

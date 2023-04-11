@@ -1,0 +1,15 @@
+.afterpay {
+    font-size: 16px;
+    margin: 0 0 0 0;
+    &Button {
+        position: relative;
+        top: 5px;
+        margin: 0 0 0 10px;
+        min-width: 100px;
+    }
+    &Info {
+        position: relative;
+        top: 3px;
+        margin: 0 0 0 2px;
+    }
+}

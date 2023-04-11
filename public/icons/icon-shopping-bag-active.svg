@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.527" height="27.615" viewBox="0 0 26.527 27.615">
+  <g id="Group_219" data-name="Group 219" transform="translate(-1536.347 -21)">
+    <g id="Icon_feather-shopping-bag" data-name="Icon feather-shopping-bag" transform="translate(1537.347 28)">
+      <path id="Path_3" data-name="Path 3" d="M7.442,3,4.5,6.923v13.73a1.961,1.961,0,0,0,1.961,1.961h13.73a1.961,1.961,0,0,0,1.961-1.961V6.923L19.211,3Z" transform="translate(-4.5 -3)" fill="none" stroke="#1a1d21" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_4" data-name="Path 4" d="M4.5,9H22.153" transform="translate(-4.5 -5.077)" fill="none" stroke="#1a1d21" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Path_5" data-name="Path 5" d="M19.846,15A3.923,3.923,0,0,1,12,15" transform="translate(-7.096 -7.154)" fill="none" stroke="#1a1d21" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+    <g id="Group_80" data-name="Group 80" transform="translate(1549 21)">
+      <g id="Group_81" data-name="Group 81">
+        <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(-0.126)" fill="#1a1d21" stroke="#fff" stroke-width="1">
+          <circle cx="7" cy="7" r="7" stroke="none"/>
+          <circle cx="7" cy="7" r="6.5" fill="none"/>
+        </g>
+        <text id="_1" data-name="1" transform="translate(4 10)" fill="#fff" font-size="9" font-family="Helvetica" letter-spacing="0.03em"><tspan x="0" y="0">1</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

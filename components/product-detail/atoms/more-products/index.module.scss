@@ -1,0 +1,50 @@
+@import '@/styles/variables.scss';
+
+.moreProducts {
+  position: relative;
+  padding: 0 15px;
+  margin: 20px 0 0 0;
+
+  h2 {
+    font-size: 15px;
+    @include respond-to('small') {
+      text-align: center;
+      margin: 0 0 40px 0;
+    }
+  }
+
+  @include respond-to('small') {
+    padding: 0 0;
+    margin: 60px 10px 0 10px;
+  }
+
+  &List {
+    display: grid;
+    margin: 10px 0 20px 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+    @include respond-to('small') {
+      flex-wrap: wrap;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &Image {
+    background-color: #c4c4c4;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &Item {
+    position: relative;
+    margin: 0 0 0 0;
+    // width: calc( 20% - 15px );
+    @include respond-to('small') {
+      // width: 50%;
+      margin: 0;
+    }
+  }
+}

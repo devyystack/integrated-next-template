@@ -1,0 +1,17 @@
+@import '@/styles/variables.scss';
+
+.productDetail {
+  display: flex;
+  padding: 0 0px 0 0px;
+  margin: 0 10px;
+
+  @include respond-to('medium') {
+    margin: 0 0px;
+  }
+
+  @include respond-to('small') {
+    flex-wrap: wrap;
+    margin: 0 10px;
+    display: block;
+  }
+}

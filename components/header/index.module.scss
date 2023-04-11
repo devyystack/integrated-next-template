@@ -1,0 +1,334 @@
+@import '@/styles/variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+
+  h1 {
+    user-select: none;
+  }
+  &Bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 70;
+    pointer-events: none;
+    transition: opacity 500ms ease-in-out;
+    transition-delay: 150ms;
+  }
+  &Top {
+    background-color: white;
+    position: relative;
+    z-index: 100;
+  }
+  &Hero {
+    max-width: 160px;
+
+    @include respond-to('small') {
+      max-width: 100px;
+    }
+  }
+  &Mobile {
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    transition: opacity 500ms ease-in-out;
+    transition-delay: 150ms;
+    display: none;
+    @include respond-to('small') {
+      display: block;
+    }
+    ul {
+      padding: 10px 16px 0 16px;
+      li {
+        font-size: 18px;
+        margin: 20px 0;
+      }
+    }
+  }
+  &Inner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @include respond-to('small') {
+      padding: 0 15px 0 10px;
+    }
+  }
+
+  &Search {
+    position: relative;
+    width: 20px;
+    user-select: none;
+    &Wrap {
+      display: flex;
+      margin-right: 20px;
+      padding: 5px 0 5px 8px;
+      border-radius: 35px;
+      transition: all 500ms ease-in-out;
+      position: relative;
+      top: 2px;
+      @include respond-to('small') {
+        margin-right: 0;
+      }
+      &White {
+        background-color: white;
+      }
+      &Black {
+        background-color: white;
+        input[type='search'] {
+          border-bottom: none !important;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &SearchContainer {
+    transition: all 500ms ease-in-out;
+    overflow: hidden;
+    margin: 0 0 0 0;
+    width: 0px;
+
+    @include respond-to('small') {
+      margin: 0 5px 0 0;
+    }
+    &.searchOpen {
+      width: 240px;
+      @include respond-to('medium') {
+        width: 160px;
+      }
+      @include respond-to('small') {
+        width: 140px;
+      }
+    }
+    input[type='search'] {
+      border-bottom: 1px solid black;
+      outline: none;
+      margin: 0 0 0 12px;
+      width: 90%;
+      font-size: 14px;
+      transition: all 350ms ease-in-out;
+      background-color: transparent;
+    }
+  }
+  &Cart {
+    position: relative;
+    width: 22px;
+    user-select: none;
+    margin: 0 0 0 10px;
+
+    @include respond-to('small') {
+      margin: 0 0 0 9px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &Menu {
+    position: relative;
+    width: 18px;
+    user-select: none;
+    display: none;
+    @include respond-to('small') {
+      display: block;
+      margin: 2px 0 0 16px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &Login {
+    user-select: none;
+    margin: 0 60px;
+    @include respond-to('small') {
+      display: none;
+    }
+  }
+  &Right {
+    margin-left: auto;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+    top: 5px;
+    @include respond-to('small') {
+      top: 0px;
+      margin-right: 0;
+    }
+  }
+
+  &Main {
+    position: relative;
+    z-index: 90;
+    background-color: white;
+    align-self: flex-end;
+    @include respond-to('small') {
+      display: none;
+    }
+    ul {
+      margin: 0 0 0 0;
+      font-size: 14px;
+      display: flex;
+      @include respond-to('medium') {
+        font-size: 13px;
+      }
+      li {
+        margin: 0 65px 0 0;
+        letter-spacing: 1px;
+
+        user-select: none;
+        &:hover {
+          a {
+            span {
+              border-bottom: 1px solid black;
+            }
+          }
+        }
+        &:first-of-type {
+          a {
+            display: inline-block;
+            padding: 0 10px 0 50px;
+            height: 50px;
+            span {
+              line-height: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &SubNavigation {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -155%;
+    z-index: 80;
+    transition: all 500ms ease-in-out;
+    border-top: 1px solid black;
+
+    @include respond-to('small') {
+      display: none;
+    }
+
+    &Active {
+      top: 100%;
+    }
+
+    &Active {
+      top: 100%;
+    }
+
+    &Group {
+      margin: 0 0px;
+      a {
+        span {
+          &:hover {
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+    }
+
+    ul {
+      padding: 35px 0;
+      margin: 0 0 0 210px;
+      font-size: 12px;
+      display: flex;
+      flex-direction: row;
+      li {
+        margin: 0 0 15px 0;
+        width: 140px;
+        cursor: pointer;
+        a {
+          span {
+            cursor: pointer;
+            &:hover {
+              border-bottom: 1px solid black;
+            }
+          }
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.sub {
+  position: relative;
+  ul {
+    padding: 0;
+  }
+}
+.highlight {
+  a {
+    span {
+      &:hover {
+        border-bottom: none !important;
+      }
+    }
+    span {
+      background-color: black;
+      color: white;
+      padding: 5px 7px 3px 7px;
+      position: relative;
+      top: -1px;
+      line-height: 1em;
+    }
+  }
+}
+.active {
+  a {
+    border-bottom: 1px solid black;
+  }
+}
+
+.black {
+  background-color: #1a1d21;
+  color: white;
+  transition: all 300ms ease-in-out;
+
+  ul li a {
+    span {
+      &:hover {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+}
+
+.white {
+  background-color: white;
+  color: black;
+  transition: all 300ms ease-in-out;
+
+  ul li a {
+    span {
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.breadcrumb {
+    position: relative;
+    font-size: 12px;
+    margin: 10px 0px 30px 0px;
+    @include respond-to("medium"){
+        margin: 10px 0px 20px 0px;
+    }
+    @include respond-to("small"){
+        padding: 0 0;
+        margin: 10px 0px 30px 0px;
+        font-size: 11px;
+    }
+    &Carrot {
+        max-width: 6px;
+        display: inline-block;
+        position: relative;
+        top: -2px;
+        margin: 0 0 0 20px;
+
+        @include respond-to("small"){
+            margin: 0 0 0 10px;
+        }
+    }
+    &List {
+        display: flex;
+        li {
+            margin: 0 20px 0 0;
+            font-size: 12px;
+        }
+    }
+}

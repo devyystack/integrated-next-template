@@ -1,0 +1,95 @@
+.presale {
+    margin: 0px 0 40px 0;
+    &Form {
+        position: relative;
+        padding: 10px 0;
+        display: flex;
+        label {
+            display: block;
+            margin: 0 0 5px 0;
+        }
+        input[type="text"]{
+            border: 1px solid black;
+            font-family: "AvenirLTPro-Medium";
+            outline: none;
+            font-size: 16px;
+            padding: 12px 16px;
+            text-transform: uppercase;
+        }
+        button {
+            font-family: "AvenirLTPro-Medium";
+            background-color: rgb(0,0,0);
+            color: white;
+            padding: 15px 25px 14px 25px;
+            position: relative;
+            top: 0px;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-left: 20px;
+            &:hover {
+                background-color: rgb(50,50,50);
+            }
+        }
+    }
+    &Field {
+        position: relative;
+        margin: 0 0 0 0;
+        &Error {
+            font-size: 14px;
+            margin: 10px 0 0 0;
+            color: #FF2B55;
+            img {
+                display: inline-block;
+                margin: 0 8px 0 0;
+                position: relative;
+                top: -2px;
+                width: 16px;
+            }
+            span {
+                transition: opacity 300ms ease;
+            }
+        }
+    }
+    &Signup {
+        position: relative;
+        text-align: center;
+        h2 {
+            display: inline-block;
+            margin: 50px 0 0 0;
+            a {
+                text-decoration: underline;
+            }
+            img {
+                display: inline-block;
+                margin: 6px 12px 0 0;
+                vertical-align: top;
+                width: 30px;
+            }
+            > div {
+                display: inline-block;
+                text-align: left;
+            }
+        }
+        button {
+            font-family: "AvenirLTPro-Medium";
+            background-color: rgb(0,0,0);
+            color: white;
+            padding: 15px 25px 14px 25px;
+            position: relative;
+            top: 0px;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-left: 0;
+            width: 100%;
+            border: 1px solid white;
+            &:hover {
+                background-color: rgb(50,50,50);
+            }
+        }
+    }
+    p {
+        margin: 0 0 20px 0;
+    }
+
+    
+}

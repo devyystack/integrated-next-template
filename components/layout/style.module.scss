@@ -1,0 +1,21 @@
+@import '@/styles/variables.scss';
+
+.layout {
+  position: relative;
+  transition: all 300ms ease-in-out;
+
+  padding: 100px 4% 0 4%;
+  @include respond-to('small') {
+    padding: 60px 10px 0 10px;
+  }
+}
+
+.black {
+  background-color: #1a1d21;
+  color: white !important;
+}
+
+.white {
+  background-color: white;
+  color: black !important;
+}

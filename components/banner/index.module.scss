@@ -1,0 +1,76 @@
+@import '@/styles/variables.scss';
+.banner {
+  position: fixed;
+  margin: 0;
+  padding: 16px 0 17px 0;
+  background-color: #000;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  // position: relative;
+  z-index: 100;
+  text-align: left;
+  @include respond-to('small') {
+    padding: 12px 0 2px 0;
+  }
+  &Inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-size: 14px;
+    @include respond-to('small') {
+      align-items: center;
+      display: block;
+    }
+  }
+  &Right {
+    margin: 0 0 0 auto;
+    display: flex;
+    @include respond-to('small') {
+      margin: 10px auto;
+      // padding: 0 10px;
+      justify-content: center;
+    }
+    button {
+      margin: 0 0 0 40px;
+      @include respond-to('small') {
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+  &Timer {
+    display: flex;
+    align-items: center;
+    span {
+      display: inline-block;
+      line-height: 1em;
+      text-align: center;
+      font-size: 22px;
+      color: white;
+      width: 61px;
+      background-color: #1a1d21;
+      margin: 0 10px 0 0;
+      padding: 10px 0px 0 0px;
+      &:first-of-type {
+        margin: 0 10px 0 20px;
+      }
+    }
+    label {
+      display: block;
+      font-size: 10px;
+      position: relative;
+      top: -2px;
+      text-transform: uppercase;
+    }
+  }
+  h2 {
+    margin: 0;
+    line-height: 1em;
+    @include respond-to('small') {
+      text-align: center;
+    }
+  }
+}

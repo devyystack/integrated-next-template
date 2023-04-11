@@ -1,0 +1,55 @@
+@import '@/styles/variables.scss';
+.product {
+  position: relative;
+  text-align: center;
+  // width: 19%;
+  width: 100%;
+  margin: 0 1% 0 0;
+  @include respond-to('small') {
+    // width: 49%;
+    margin: 0 1% 0 0;
+  }
+  &Image {
+    position: relative;
+    user-select: none;
+  }
+  &OnSale {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    z-index: 10;
+    text-transform: uppercase;
+    background-color: rgb(26, 29, 33);
+    color: white;
+    padding: 4px 6px 3px 6px;
+    font-size: 10px !important;
+    line-height: 1em;
+  }
+
+  &SoldOut {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    text-transform: uppercase;
+    background-color: rgb(238, 238, 238);
+    color: rgb(26, 29, 23);
+    padding: 4px 6px 3px 6px;
+    font-size: 10px !important;
+    line-height: 1em;
+  }
+
+  h2 {
+    font-size: 13px;
+    margin: 10px 0 2px 0;
+    font-family: 'AvenirLTPro-Medium';
+    @include respond-to('small') {
+      margin: 10px 10px 2px 10px;
+      line-height: 1.3em;
+    }
+  }
+  span {
+    font-size: 13px;
+    font-family: 'AvenirLTPro-Light';
+  }
+}

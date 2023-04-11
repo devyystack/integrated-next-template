@@ -1,0 +1,59 @@
+.tab {
+    position: relative;
+
+    h2 {
+        font-size: 18px;
+        padding: 15px 0;
+        line-height: 1em;
+        cursor: pointer;
+        user-select: none;
+        margin-bottom: 0px;
+        transition: margin-bottom 400ms ease-out;
+        svg {
+            float: right;
+            position: relative;
+            top: 5px;
+            transform: rotate(0deg);
+            transform: transform 400ms ease-in-out;
+        }
+    }
+
+    &Text {
+        margin: 0 0 10px 0;
+        font-size: 13px;
+        &Tab {
+            cursor: pointer;
+        }
+        &Wrap {
+            border-bottom: 1px solid #8B8B8B;
+            margin: 0 0 5px 0;
+            transition: max-height 400ms ease-out;
+            a {
+                border-bottom: 1px solid black;
+            }
+            p {
+                max-width: 100%;
+                font-size: 14px;
+                line-height: 1.8em;
+                margin-top: 0;
+                margin-bottom: 10px;
+                &:first-of-type {
+                    margin-top: 10px;
+                }
+            }
+            &Open {
+                max-height: 1000px;
+                border-bottom: 1px solid transparent;
+            }
+        }
+    }
+}
+
+
+.open {
+    border-bottom: 1px solid rgb(112, 112, 112, 0.22);
+    margin-bottom: 10px;
+    svg {
+        transform: rotate(180deg) !important;
+    }
+}
